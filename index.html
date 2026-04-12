@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SBTI 人格测试 - Local</title>
+  <meta name="description" content="一个本地运行的 SBTI 风格娱乐人格测试。">
+  <meta name="theme-color" content="#f4fbf7">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23426d4d'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-size='20' font-family='Arial' font-weight='700' fill='white'%3ESB%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section id="introScreen" class="screen is-active" aria-labelledby="introTitle">
+      <div class="intro-layout">
+        <div class="intro-copy">
+          <p class="eyebrow">LOCAL SBTI LAB</p>
+          <h1 id="introTitle">MBTI 已经过时，SBTI 来了。</h1>
+          <p class="intro-sub">三十题测出你的互联网人格。全程本地运行，答案不会上传。</p>
+          <div class="intro-actions">
+            <button class="btn btn-primary" id="startBtn" type="button">开始测试</button>
+            <button class="btn btn-secondary" id="resumeBtn" type="button" hidden>继续上次</button>
+          </div>
+          <p class="tiny-note">纯娱乐测试，不构成心理学诊断。图片素材来自原站公开资源，本地复刻仅供个人使用。</p>
+        </div>
+        <div class="image-wall" aria-label="人格结果图预览">
+          <img src="./assets/images/CTRL.png" alt="CTRL 人格图">
+          <img src="./assets/images/DEAD.png" alt="DEAD 人格图">
+          <img src="./assets/images/OJBK.png" alt="OJBK 人格图">
+        </div>
+      </div>
+    </section>
+
+    <section id="testScreen" class="screen" aria-labelledby="testTitle">
+      <header class="test-header">
+        <div>
+          <p class="eyebrow">SBTI QUESTIONS</p>
+          <h2 id="testTitle">按直觉选，不要给电子魂魄开会。</h2>
+        </div>
+        <button class="btn btn-ghost" id="homeBtn" type="button">回首页</button>
+      </header>
+
+      <div class="progress-wrap" aria-live="polite">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0">
+          <span id="progressFill"></span>
+        </div>
+        <span id="progressText">0 / 30</span>
+      </div>
+
+      <form id="quizForm" class="question-stack"></form>
+
+      <footer class="bottom-actions">
+        <p id="hintText">全选完才会放行。</p>
+        <button class="btn btn-primary" id="submitBtn" type="button" disabled>提交并查看结果</button>
+      </footer>
+    </section>
+
+    <section id="resultScreen" class="screen" aria-labelledby="resultTitle">
+      <div class="result-layout">
+        <figure class="poster-panel">
+          <img id="resultImage" src="./assets/images/CTRL.png" alt="人格结果图">
+          <figcaption id="posterCaption">系统正在整理你的电子档案。</figcaption>
+        </figure>
+
+        <div class="result-copy">
+          <p class="eyebrow" id="resultKicker">你的主类型</p>
+          <h2 id="resultTitle">CTRL（拿捏者）</h2>
+          <p class="match-badge" id="matchBadge">匹配度 92%</p>
+          <p id="resultDesc" class="result-desc"></p>
+          <div class="result-actions">
+            <button class="btn btn-primary" id="copyBtn" type="button">复制结果</button>
+            <button class="btn btn-secondary" id="restartBtn" type="button">重新测试</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="score-section" aria-labelledby="scoreTitle">
+        <h3 id="scoreTitle">十五维度评分</h3>
+        <div id="scoreGrid" class="score-grid"></div>
+      </section>
+
+      <section class="note-section">
+        <h3>友情提示</h3>
+        <p>本测试只负责提供笑点，不负责提供人生判决书。你可以转发，但别太当真。</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
