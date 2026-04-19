@@ -1,5 +1,5 @@
-// Generated from https://sbti.unun.dev on 2026-04-12.
-// Keep this file local and dependency-free.
+//  Personal blog page surface233.top
+//I will keep this file local and dependency-free.
 const QUESTIONS = [
   {
     "id": "q1",
