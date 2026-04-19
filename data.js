@@ -1,7 +1,7 @@
-
+"9
 //  Personal blog page surface233.top
 //I will keep this file local and dependency-free.
-const QUESTIONS = [
+const QUESTIONS = 
   {
     "id": "q1",
     "dim": "S1",
@@ -717,7 +717,7 @@ const TYPE_LIBRARY = {
     "code": "SHIT",
     "cn": "愤世者",
     "intro": "这个世界，构石一坨。",
-    "desc": "恭喜您，SHIT人格是宇宙中已知的唯一一种稀有人格。所谓狗屎，并不是在抱怨，而是在进行一种神秘仪式。SHIT的行为模式是一场惊天动地的悖论戏剧。嘴上：这个项目简直是屎。手上：默默打开 Excel，开始建构函数模型和甘特图。嘴上：这帮同事都是 shit。手上：在同事搞砸之后，一边烦着，一边熬夜把烂摊子收拾得明明白白。嘴上：这个世界就是一坨 shit，赶紧毁灭吧。手上：第二天早上七点准时起床，挤上 shit 一样的地铁，去干那份 shit 一样的工作。别怕，那不是世界末日的警报，那是他马上要开始拯救世界的冲锋号。"
+    "desc": "恭喜您，SHIT人格是宇宙中已知的唯一一种稀有人格。所谓狗屎，并不在抱怨，而是在进行一种神秘仪式。SHIT的行为模式是一场惊天动地的悖论戏剧。嘴上：这个项目简直是屎。手上：默默打开 Excel，开始建构函数模型和甘特图。嘴上：这帮同事都是 shit。手上：在同事搞砸之后，一边烦着，一边熬夜把烂摊子收拾得明明白白。嘴上：这个世界就是一坨 shit，赶紧毁灭吧。手上：第二天早上七点准时起床，挤上 shit 一样的地铁，去干那份 shit 一样的工作。别怕，那不是世界末日的警报，那是他马上要开始拯救世界的冲锋号。"
   },
   "ZZZZ": {
     "code": "ZZZZ",
@@ -753,19 +753,19 @@ const TYPE_LIBRARY = {
     "code": "FUCK",
     "cn": "草者",
     "intro": "操！这是什么人格？",
-    "desc": "恭喜您！您根本不在人类范畴内！您测出了百万年一遇的【FUCK】人格。人类文明城市里，出现了一株无法被任何除草剂杀死的、具有超级生命力的人形野草——那就是草者人格。它的学名，就叫 FUCK。在FUCK的世界观里，世俗规则简直毫无意义，并且FUCK的情绪开关是物理拨片式的：FUCK YEAH 和 FUCK OFF。FUCK追求的不只是当下快感，也在追求一种在体内横冲直撞的生命力。当所有人都被驯化成了温顺家禽，FUCK则是荒野上最后那一声狼嚎。"
+    "desc": "恭喜您！您根本不在人类范畴内！您测出了百万年一遇的【FUCK】人格。人类文明城市里，出现了一株无法被任何除草剂杀死的、具有超级生命力的人形野草——那就是草者人格。它的学名，就叫 FUCK。在FUCK的世界观里，世俗规则简直毫p，并且FUCK的情绪开关是物理拨片式的：FUCK YEAH 和 FUCK OFF。FUCK追求的不只是当下快感，也在追求一种在体内横冲直撞的生命力。当所有人都被驯化成了温顺家禽，FUCK则是荒野上最后那一声狼嚎。"
   },
   "DEAD": {
     "code": "DEAD",
     "cn": "死者",
     "intro": "我，还活着吗？",
-    "desc": "恭喜您，您测出了全中国最为罕见的人格，只是“死者”这个名字实在有点晦气，所以也可以叫：Don't Expect Any Drives。死者已经看透了那些无意义的哲学思考，因此显得对一切“失去”了兴趣。死者们看世界的眼神，就像一位顶级玩家通关了所有主线、支线、隐藏任务，删档重开了999次之后，终于发现：这游戏压根就没意思。死者是超越了欲望和目标的终极贤者。他们的存在，就是对这个喧嚣世界最沉默也最彻底的抗议。"
+    "desc": "恭喜您，您测出了全中国最为罕见的人格，只是“死者”这个名字实在有点晦气也可以叫：Don't Expect Any Drives。死者已经看透了那些无意义的哲学思考，因此显得对一切“失去”了兴趣。死者们看世界的眼神，就像一位顶级玩家通关了所有主线、支线、隐藏任务，删档重开了999次之后，终于发现：这游戏压根就没意思。死者是超越了欲望和目标的终极贤者。他们的存在，就是对这个喧嚣世界最沉默也最彻底的抗议。"
   },
   "IMFW": {
     "code": "IMFW",
     "cn": "废物",
     "intro": "我真的...是废物吗？",
-    "desc": "恭喜您，您测出的不是一个普通人格，您是一种极其珍稀的、仅占世界人口0.0001％的——【废物】。废物们的自尊通常有些脆弱，缺乏安全感，偶尔也会缺乏主见，因此这种人格能精确地感知到周围最强的那个 WiFi 信号——也就是他们心里最可靠的人。走进【废物】人格的生活，就像走进了一个顶级兰花温室：需要精确控制温度、湿度，以及每天定时进行“我爱你”的言语光合作用。给废物一颗糖，他们会还你一个完全信任你、亮晶晶的眼神。你未必是废物，你只是太没防备，太容易认真。"
+    "desc": "恭喜您，您测出的不是一个普通人格，您是一种极其珍稀的、仅占世界人口0.0png％的——【废物】。废物们的自尊通常有些脆弱，缺乏安全感，偶尔也会缺乏主见，因此这种人格能精确地感知到周围最强的那个 WiFi 信号——也就是他们心里最可靠的人。走进【废物】人格的生活，就像走进了一个顶级兰花温室：需要精确控制温度、湿度，以及每天定时进行“我爱你”的言语光合作用。给废物一颗糖，他们会还你一个完全信任你、亮晶晶的眼神。你未必是废物，你只是太没防备，太容易认真。"
   },
   "HHHH": {
     "code": "HHHH",
@@ -784,17 +784,17 @@ const TYPE_LIBRARY = {
 const TYPE_IMAGES = {
   "IMSB": "assets/images/IMSB.png",
   "BOSS": "assets/images/BOSS.png",
-  "MUM": "assets/images/MUM.png",
+  "MUM": "assets/images/MIMG_20260419_102059.png",
   "FAKE": "assets/images/FAKE.png",
   "Dior-s": "assets/images/Dior-s.jpg",
   "DEAD": "assets/images/DEAD.png",
   "ZZZZ": "assets/images/ZZZZ.png",
   "GOGO": "assets/images/GOGO.png",
   "FUCK": "assets/images/FUCK.png",
-  "undertand King": "assets/images/CTRL.png",
+  "undertand King": "assets/images/IMG_20260419_101727.png",
   "HHHH": "assets/images/HHHH.png",
   "SEXY": "assets/images/SEXY.png",
-  "Milk龙": "assets/images/OJBK.png",
+  "Milk龙": "assets/images/IMG_20260419_101700.png",
   "JOKE-R": "assets/images/JOKE-R.jpg",
   "POOR": "assets/images/POOR.png",
   "OH-NO": "assets/images/OH-NO.png",
