@@ -1,3 +1,4 @@
+
 //  Personal blog page surface233.top
 //I will keep this file local and dependency-free.
 const QUESTIONS = [
@@ -576,7 +577,7 @@ const QUESTIONS = [
 const SPECIAL_QUESTIONS = [
   {
     "id": "drink_gate_q1",
-    "special": false,
+    "special": true,
     "kind": "drink_gate",
     "text": "您平时有什么爱好？",
     "options": [
@@ -600,7 +601,7 @@ const SPECIAL_QUESTIONS = [
   },
   {
     "id": "drink_gate_q2",
-    "special": false,
+    "special": true,
     "kind": "drink_trigger",
     "text": "您对饮酒的态度是？",
     "options": [
@@ -617,17 +618,16 @@ const SPECIAL_QUESTIONS = [
 ];
 
 const TYPE_LIBRARY = {
-  "CTRL": {
-    "code": "CTRL",
-    "cn": "拿捏者",
-    "intro": "怎么样，被我拿捏了吧？",
-    "desc": "恭喜您，您测出了全中国最为罕见的人格，您是宇宙熵增定律的天然反抗者！全世界所谓成功人士里，99.99%都是您的拙劣模仿者。CTRL人格，是行走的人形自走任务管理器，普通人眼中的“规则”，在您这里只是出厂的基础参数设置；凡人所谓的“计划”，对您而言不过是心血来潮的随手涂鸦。拥有一个CTRL朋友意味着什么？意味着你的人生导航系统会变得更加精准、高效。因为CTRL最会拿捏了。CTRL会在你人生列车即将脱轨的前一秒，用一个“Ctrl+S”帮你硬核存档，再用一套无法拒绝的逻辑把你强行拽回正轨。他们是你混乱生活最后的备份盘，是宇宙崩塌前唯一还亮着的那个重启键。"
-  },
-  "ATM-er": {
-    "code": "ATM-er",
-    "cn": "送钱者",
-    "intro": "你以为我很有钱吗？",
-    "desc": "恭喜您，您竟然测出了这个世界上最稀有的人格。您或将成为金融界的未解之谜——是的，ATM-er不一定真的“送钱”，但可能永远在“支付”。支付时间、支付精力、支付耐心、支付一个本该安宁的夜晚。因此像一部老旧但坚固的ATM机，插进去的是别人的焦虑和麻烦，吐出来的是“没事，有我”的安心保证。您的人生就是一场盛大的、无人喝彩的单人付账秀。您竟用磐石般的可靠，承受了瀑布般的索取，偶尔夜深人静才会对着账单——可能是精神上的——发出一声叹息：我这该死的、无处安放的责任心啊。"
+"understand King": {
+  "code": "understand King",
+  "cn": "懂王",
+  "intro": "没有人比我更懂人格测试。",
+  "desc": "恭喜您，您测出了全网最懂的人格——懂王。没有人比您更懂拿捏，没有人比您更懂掌控。您是宇宙熵增定律的天然反抗者，因为没有人比您更懂熵。别人眼中的混乱，在您眼里只是待整理的数据包。您的人生信条：我说行就行，我说不行就不行。您是这个失控世界里最后一个理性的声音，是所有人混乱生活的Ctrl+S。没有人比您更懂重启。"
+},
+  "tool-er": {
+    "code": "tool-er",
+    "cn": "工具人",
+    "intro": "恭喜您，您测出了校园里最忙碌的人格——工具人。借作业？找您。带饭？找您。小组作业没人干活？您默默全包了。别人在玩，您在擦屁股。别人在睡，您在赶工。您不是不知道累，您只是不会说“不”。您的手机永远开着“收到”，您的嘴里永远挂着“没事”。您是全班最可靠的人，也是最容易被忘记感谢的人。偶尔夜深人静，您会对着天花板问自己：我到底图啥？然后第二天，继续当工具人。"
   },
   "Dior-s": {
     "code": "Dior-s",
@@ -683,12 +683,12 @@ const TYPE_LIBRARY = {
     "intro": "已经，没有人类了。",
     "desc": "SCP基金会紧急报告：项目编号 SCP-CN-████ “伪人”。在社交场合，伪人是八面玲珑的存在，因为他们切换人格面具比切换手机输入法还快。上一秒还是推心置腹的铁哥们模式，下一秒领导来了，瞬间切换成沉稳可靠好员工模式，连脸上的光泽度和卷曲度都会发生微调。你以为你交到了一个真心懂你的朋友？醒醒。你只是幸运地遇到了一个善于伪装、高性能的仿生人罢了。夜深人静时，伪人把面具一层层摘下来，最后才发现，面具下空得很，正是这些面具构成了自己。"
   },
-  "OJBK": {
-    "code": "OJBK",
-    "cn": "无所谓人",
-    "intro": "我说随便，是真的随便。",
-    "desc": "让我们直面这个词的粗犷本质：OJBK。这已经不是一种人格，而是一种统治哲学。当凡人面临“中午吃米饭还是面条”的世纪抉择时，大脑在激烈燃烧卡路里；而OJBK人格，会用一种批阅奏章般的淡然，轻飘飘地吐出两个字：都行。这不是没主见，这是在告诉你：尔等凡俗的选择，于朕而言，皆为蝼蚁。为什么不争执？因为跟草履虫辩论宇宙的未来毫无意义。为什么不较真？因为帝王不会在意脚下的尘埃是往左飘还是往右飘。"
-  },
+"milk龙": {
+  "code": "milk龙",
+  "cn": "奶龙",
+  "intro": "我是奶龙！我才是奶龙！",
+  "desc": "恭喜您，您测出了全网最魔性的人格——奶龙。我是奶龙！我才是奶龙！今天我要吃定你了！您的大脑是单核的，只运行一个程序：快乐。别人纠结选A选B，您说都行。别人emo了，您说啥也不是。您不是没烦恼，是您的脑子会自动把烦恼格式化成一句“嘎”。您觉得自己帅炸了，虽然别人觉得您有点憨。保持这样，奶龙，您是这条街最亮的仔。雷霆嘎巴！无情哈拉少！"
+},
   "MALO": {
     "code": "MALO",
     "cn": "吗喽",
@@ -791,10 +791,10 @@ const TYPE_IMAGES = {
   "ZZZZ": "assets/images/ZZZZ.png",
   "GOGO": "assets/images/GOGO.png",
   "FUCK": "assets/images/FUCK.png",
-  "CTRL": "assets/images/CTRL.png",
+  "undertand King": "assets/images/CTRL.png",
   "HHHH": "assets/images/HHHH.png",
   "SEXY": "assets/images/SEXY.png",
-  "OJBK": "assets/images/OJBK.png",
+  "Milk龙": "assets/images/OJBK.png",
   "JOKE-R": "assets/images/JOKE-R.jpg",
   "POOR": "assets/images/POOR.png",
   "OH-NO": "assets/images/OH-NO.png",
@@ -802,7 +802,7 @@ const TYPE_IMAGES = {
   "SHIT": "assets/images/SHIT.png",
   "THAN-K": "assets/images/THAN-K.png",
   "MALO": "assets/images/MALO.png",
-  "ATM-er": "assets/images/ATM-er.png",
+  "tool-er": "assets/images/ATM-er.png",
   "THIN-K": "assets/images/THIN-K.png",
   "SOLO": "assets/images/SOLO.png",
   "LOVE-R": "assets/images/LOVE-R.png",
@@ -813,11 +813,11 @@ const TYPE_IMAGES = {
 
 const NORMAL_TYPES = [
   {
-    "code": "CTRL",
+    "code": "understand King",
     "pattern": "HHH-HMH-MHH-HHH-MHM"
   },
   {
-    "code": "ATM-er",
+    "code": "tool-er",
     "pattern": "HHH-HHM-HHH-HMH-MHL"
   },
   {
@@ -857,7 +857,7 @@ const NORMAL_TYPES = [
     "pattern": "HLM-MML-MLM-MLM-HLH"
   },
   {
-    "code": "OJBK",
+    "code": "Milk龙",
     "pattern": "MMH-MMM-HML-LMM-MML"
   },
   {
