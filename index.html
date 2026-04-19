@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SBTI 人格测试 - Local</title>
-  <meta name="description" content="一个本地运行的 SBTI 风格娱乐人格测试。">
+  <title>shitTI 人格测试</title>
+  <meta name="description" content="一个本地运行的 shitTI 风格娱乐人格测试，不会将数据上传服务器。">
   <meta name="theme-color" content="#f4fbf7">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23426d4d'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-size='20' font-family='Arial' font-weight='700' fill='white'%3ESB%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="./styles.css">
@@ -14,14 +14,14 @@
     <section id="introScreen" class="screen is-active" aria-labelledby="introTitle">
       <div class="intro-layout">
         <div class="intro-copy">
-          <p class="eyebrow">LOCAL SBTI LAB</p>
-          <h1 id="introTitle">MBTI 已经过时，SBTI 来了。</h1>
-          <p class="intro-sub">三十题测出你的互联网人格。由浮光掠影开放复刻镜像，全程本地运行，答案不会上传，仿照原版。</p>
+          <p class="eyebrow">LOCAL shitTI LAB</p>
+          <h1 id="introTitle">SBTI 已经过时，shitTI 来了。</h1>
+          <p class="intro-sub">三十题测出你的互联网人格。由浮光掠影复刻镜像，全程本地运行，答案不会上传，“仿照”原版。</p>
           <div class="intro-actions">
             <button class="btn btn-primary" id="startBtn" type="button">开始测试</button>
             <button class="btn btn-secondary" id="resumeBtn" type="button" hidden>继续上次</button>
           </div>
-          <p class="tiny-note">纯娱乐测试，不构成心理学诊断。图片素材来自原站公开资源，本地复刻仅供个人使用。</p>
+          <p class="tiny-note">纯娱乐测试，不构成心理学诊断。图片素材来自原站公开资源或属于AI生成，请自行甄别，本地复刻仅供个人学习使用，仅于二十四小时内删除相关内容，谢谢🙏</p>
         </div>
         <div class="image-wall" aria-label="人格结果图预览">
           <img src="./assets/images/CTRL.png" alt="CTRL 人格图">
@@ -34,8 +34,8 @@
     <section id="testScreen" class="screen" aria-labelledby="testTitle">
       <header class="test-header">
         <div>
-          <p class="eyebrow">SBTI QUESTIONS</p>
-          <h2 id="testTitle">按直觉选，不要给电子魂魄开会。</h2>
+          <p class="eyebrow">shitTI QUESTIONS</p>
+          <h2 id="testTitle">让我看看你又是何方神圣</h2>
         </div>
         <button class="btn btn-ghost" id="homeBtn" type="button">回首页</button>
       </header>
@@ -50,8 +50,8 @@
       <form id="quizForm" class="question-stack"></form>
 
       <footer class="bottom-actions">
-        <p id="hintText">全选完才会放行。</p>
-        <button class="btn btn-primary" id="submitBtn" type="button" disabled>提交并查看结果</button>
+        <p id="hintText">耐心点，全选完完才能给你结果</p>
+        <button class="btn btn-primary" id="submitBtn" type="button" disabled>让我来剖析你吧</button>
       </footer>
     </section>
 
