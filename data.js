@@ -1,7 +1,6 @@
-"9
 //  Personal blog page surface233.top
 //I will keep this file local and dependency-free.
-const QUESTIONS = 
+const QUESTIONS = [
   {
     "id": "q1",
     "dim": "S1",
@@ -683,8 +682,8 @@ const TYPE_LIBRARY = {
     "intro": "已经，没有人类了。",
     "desc": "SCP基金会紧急报告：项目编号 SCP-CN-████ “伪人”。在社交场合，伪人是八面玲珑的存在，因为他们切换人格面具比切换手机输入法还快。上一秒还是推心置腹的铁哥们模式，下一秒领导来了，瞬间切换成沉稳可靠好员工模式，连脸上的光泽度和卷曲度都会发生微调。你以为你交到了一个真心懂你的朋友？醒醒。你只是幸运地遇到了一个善于伪装、高性能的仿生人罢了。夜深人静时，伪人把面具一层层摘下来，最后才发现，面具下空得很，正是这些面具构成了自己。"
   },
-"milk龙": {
-  "code": "milk龙",
+"Milk龙": {
+  "code": "Milk龙",
   "cn": "奶龙",
   "intro": "我是奶龙！我才是奶龙！",
   "desc": "恭喜您，您测出了全网最魔性的人格——奶龙。我是奶龙！我才是奶龙！今天我要吃定你了！您的大脑是单核的，只运行一个程序：快乐。别人纠结选A选B，您说都行。别人emo了，您说啥也不是。您不是没烦恼，是您的脑子会自动把烦恼格式化成一句“嘎”。您觉得自己帅炸了，虽然别人觉得您有点憨。保持这样，奶龙，您是这条街最亮的仔。雷霆嘎巴！无情哈拉少！"
@@ -791,7 +790,7 @@ const TYPE_IMAGES = {
   "ZZZZ": "assets/images/ZZZZ.png",
   "GOGO": "assets/images/GOGO.png",
   "FUCK": "assets/images/FUCK.png",
-  "undertand King": "assets/images/IMG_20260419_101727.png",
+  "understand King": "assets/images/IMG_20260419_101727.png",
   "HHHH": "assets/images/HHHH.png",
   "SEXY": "assets/images/SEXY.png",
   "Milk龙": "assets/images/IMG_20260419_101700.png",
